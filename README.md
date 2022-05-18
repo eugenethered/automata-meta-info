@@ -1,2 +1,4 @@
-# automata-meta-info
-Automata Meta Info
+# Automata Meta Info
+
+## Packaging
+`python3 -m build`
