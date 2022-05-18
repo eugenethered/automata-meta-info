@@ -50,7 +50,6 @@ def normalize_version(version):
 
 def update_package_accessible_meta_info(version):
     package_top_module_dir = obtain_top_module_dir()
-    print(f'Overwriting package level [{package_top_module_dir}] -> __init__.py with META INFO!')
     parent_package_file = f'{os.getcwd()}/{package_top_module_dir}/__init__.py'
     description = get_module_description()
     version_line = f'__version__ = "{version}"'
